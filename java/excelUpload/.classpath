@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<accessrules>
+			<accessrule kind="accessible" pattern="sun/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/cobra.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-codec-1.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-codec-1.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-codec-1.6-tests.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-logging-1.1.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-logging-1.1.1-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-logging-adapters-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-logging-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-logging-tests.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/httpunit.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/js.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/js-1.6R5.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/js-14.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/jtidy-4aug2000r7-dev.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/junit-3.8.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/jxl.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/mail-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/nekohtml.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/nekohtml-0.9.5.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/postgresql-9.1-901.jdbc4.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/servlet-api-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/servlet-api-2.5-6.0.0rc0.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/xercesImpl-2.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/xmlParserAPIs-2.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/jrex_gre.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/JRex.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/htmlunit-core-js-2.9.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/cssparser-0.9.5.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/htmlunit-2.9.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/httpcore-4.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/httpclient-4.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/httpmime-4.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/xml-apis-1.3.04.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/javaintegrity.jar" sourcepath="E:/DropBox/gigaDB/javaintegrity-src"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/poi-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="D:/Java/excelUpload/lib/poi-ooxml-3.8-20120326.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

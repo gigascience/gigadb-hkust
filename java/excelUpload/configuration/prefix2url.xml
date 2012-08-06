@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<prefix2url>
+	<AE>http://www.ebi.ac.uk/arrayexpress/experiments/$</AE>
+	<dbGaP>http://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=$</dbGaP>
+	<dbSNP>http://www.ncbi.nlm.nih.gov/projects/SNP/$</dbSNP>
+	<dbVar>http://www.ncbi.nlm.nih.gov/dbvar/studies$</dbVar>
+	<DDBJ>http://www.ddbj.nig.ac.jp/$</DDBJ>
+	<EGA>http://www.ebi.ac.uk/ega/studies/$</EGA>
+	<ENA>http://www.ebi.ac.uk/ena/data/view/$&amp;display=text</ENA>
+	<GENBANK>http://www.ncbi.nlm.nih.gov/nuccore/$</GENBANK>
+	<GEO>http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=$</GEO>
+	<PROJECT>http://www.ncbi.nlm.nih.gov/bioproject?term=$</PROJECT>
+	<SAMPLE>http://www.ncbi.nlm.nih.gov/biosample?term=$</SAMPLE>
+	<SRA>http://www.ncbi.nlm.nih.gov/sra/?term=$</SRA>
+	<TRACE>http://www.ncbi.nlm.nih.gov/Traces/home/$</TRACE>
+	
+	<manuscript_doi>http://dx.doi.org/$</manuscript_doi>
+	<pmid>http://www.ncbi.nlm.nih.gov/pubmed/$</pmid>
+	<tax_id>http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=$</tax_id>
+	<!-- <doi2pmid>http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=PubMed&retmode=xml&term=$</doi2pmid>
+	-->
+</prefix2url>

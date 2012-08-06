@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<accessError>
+	<node>
+		<url>http://www.ncbi.nlm.nih.gov/biosample?term=$</url>
+		<error>&lt;title&gt;No items found</error>
+	</node>
+	<node>
+		<url>http://www.ebi.ac.uk/ega/studies/$</url>
+		<error>&lt;title&gt;STUDY:  | The European Genome-phenome Archive &lt;/title&gt;</error>
+	</node>
+	<node>
+		<url>http://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=$</url>
+		<error>&lt;title&gt;\ndbGap: Error encountered.\n&lt;/title&gt;</error>
+	</node>
+	<node>
+		<url>http://www.ncbi.nlm.nih.gov/bioproject?term=$</url>
+		<error>&lt;title&gt;No items found</error>
+	</node>
+	<node>
+		<url>http://www.ncbi.nlm.nih.gov/sra/?term=$</url>
+		<error>&lt;title&gt;No items found</error>
+	</node>
+	<node>
+		<url>http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=$</url>
+		<error>Could not find a public or private accession</error>
+	</node>
+	<node>
+		<url>http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=$</url>
+		<error>Parameters error, no tax_id specified</error>
+	</node>
+	<node>
+		<url>http://www.ebi.ac.uk/ena/data/view/$&amp;display=text</url>
+		<error>Result not found.</error>
+	</node>
+</accessError>

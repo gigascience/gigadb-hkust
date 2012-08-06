@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu May 03 15:45:54 GMT 2012
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=true
+jarname=excel_fat.jar
+manifest.mergeall=true
+manifest.mainclass=XmlGenerator
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

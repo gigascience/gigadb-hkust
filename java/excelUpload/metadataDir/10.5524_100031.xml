@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://datacite.org/schema/kernel-2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-2.2 http://schema.datacite.org/meta/kernel-2.2/metadata.xsd">
+	<identifier identifierType="DOI">10.5524/100031</identifier>
+	<creators>
+		<creator>
+			<creatorName>Fang, X</creatorName>
+		</creator>
+		<creator>
+			<creatorName>Huang, Z</creatorName>
+		</creator>
+		<creator>
+			<creatorName>Li, Y</creatorName>
+		</creator>
+		<creator>
+			<creatorName>Feng, Y</creatorName>
+		</creator>
+		<creator>
+			<creatorName>Chen, Y</creatorName>
+		</creator>
+		<creator>
+			<creatorName>Jiang, X</creatorName>
+		</creator>
+		<creator>
+			<creatorName>Yang, L</creatorName>
+		</creator>
+	</creators>
+	<titles>
+		<title>Genomic data from the Wuzhishan inbred pig (Sus scrofa)</title>
+	</titles>
+	<publisher>GigaScience</publisher>
+	<publicationYear>2012</publicationYear>
+	<subjects>
+		<subject>Genomic</subject>
+	</subjects>
+	<language>eng</language>
+	<resourceType resourceTypeGeneral="Dataset">GigaDB Dataset</resourceType>
+	<sizes>
+		<size>273 GB</size>
+	</sizes>
+	<rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
+	<descriptions>
+		<description descriptionType="Abstract">The pig (Sus scrofa) is an economically important food source and also serves as an important model organism.  Here we present the sequence of one male inbred Wuzhishan pig (WZSP) at generation F20.  DNA was extracted from the ear of this species.  We applied a whole genome shotgun strategy and next-generation sequencing technologies using Illumina HiSeq 2000 for sequencing, in total 340.53Gb of raw data were generated and 210.79Gb high quality data were used for assembly.  The assembly result of WZSP was 2.6 Gbp, and the N50 size of contigs and scaffolds were 23.5 Kbp and 5.4 Mbp, respectively.  38% of the genome was identified as repeats and 20,326 genes were identified from homolog prediction.</description>
+	</descriptions>
+</resource>
+

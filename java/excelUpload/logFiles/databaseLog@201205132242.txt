@@ -1,0 +1,20 @@
+**Begin: file 1 : GigaDBUploadForm_Aboriginal.xls in process...
+java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.NetworkClient.openServer(Unknown Source)
+	at sun.net.ftp.FtpClient.openServer(Unknown Source)
+	at sun.net.ftp.FtpClient.openServer(Unknown Source)
+	at Excel2Database.getFile_size(Excel2Database.java:766)
+	at Excel2Database.fillTable_file(Excel2Database.java:216)
+	at Excel2Database.fillTable(Excel2Database.java:813)
+	at PerformanceTest.main(PerformanceTest.java:58)
+**End error: GigaDBUploadForm_Aboriginal.xls
+
+**Begin: file 2 : GigaDBUploadForm_AdeliePenguin.xls in process...

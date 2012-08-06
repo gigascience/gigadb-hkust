@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<setting>
+	<schemaFile>configuration/gigascience.sql</schemaFile>
+	<excelDir>dataDir</excelDir>
+	<uploadDir>uploadDir</uploadDir>
+	<databaseUrl>jdbc:postgresql://luocpu1.cse.ust.hk:5432/gigascience/</databaseUrl>
+	<databaseUserName>gigascience</databaseUserName>
+	<databasePassword>GigaPQsqL</databasePassword>
+</setting>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<validation>
+	<identifier>
+		<value>10.5524/\d{6}</value>
+	</identifier>
+	
+	<publisher>
+		<value>GigaScience</value>
+		<value>BGI Shenzhen</value>
+	</publisher>
+	
+	<dataset_type>
+		<value>Genomic</value>
+		<value>Metagenomic</value>
+		<value>Epigenomic</value>
+		<value>Proteomic</value>
+		<value>Transcriptomic</value>
+		<value>Metabolomic</value>
+		<value>Neuoscience</value>
+		<value>Bioinformatics</value>
+	</dataset_type>
+	<ext_acc_mirror>
+		<value>AE</value>
+		<value>dbGaP</value>
+		<value>dbSNP</value>
+		<value>dbVar</value>
+		<value>DDBJ</value>
+		<value>EGA</value>
+		<value>ENA</value>
+		<value>GENBANK</value>
+		<value>GEO</value>
+		<value>PROJECT</value>
+		<value>SAMPLE</value>
+		<value>SRA</value>
+		<value>TRACE</value>
+	</ext_acc_mirror>
+	
+	<ext_acc_link>
+		<value>AE</value>
+		<value>dbGaP</value>
+		<value>dbSNP</value>
+		<value>dbVar</value>
+		<value>DDBJ</value>
+		<value>EGA</value>
+		<value>ENA</value>
+		<value>GENBANK</value>
+		<value>GEO</value>
+		<value>PROJECT</value>
+		<value>SAMPLE</value>
+		<value>SRA</value>
+		<value>TRACE</value>
+	</ext_acc_link>
+	
+	<file_format>
+		<value>AGP</value>
+		<value>BAM</value>
+		<value>CHAIN</value>
+		<value>CONTIG</value>
+		<value>EXCEL</value>
+		<value>FASTA</value>
+		<value>FASTQ</value>
+		<value>GFF</value>
+		<value>IPR</value>
+		<value>KEGG</value>
+		<value>MAF</value>
+		<value>MD5</value>
+		<value>NET</value>
+		<value>PDF</value>
+		<value>PNG</value>
+		<value>QMAP</value>
+		<value>RPKM</value>
+		<value>SAM</value>
+		<value>TAB</value>
+		<value>TAR</value>
+		<value>TEXT</value>
+		<value>VCF</value>
+		<value>WEGO</value>
+		<value>WIG</value>
+	</file_format>
+	
+	<file_type>
+		<value>Alignments</value>
+		<value>Annotation</value>
+		<value>Coding sequence</value>
+		<value>InDels</value>
+		<value>Genome assembly</value>
+		<value>Genome sequence</value>
+		<value>Genotyping data</value>
+		<value>Methylome data</value>
+		<value>Protein sequence</value>
+		<value>Readme</value>
+		<value>SNPs</value>
+		<value>SVs</value>
+		<value>Transcriptome data</value>
+		<value>Other</value>
+	</file_type>
+	
+	<submitter_email>
+		<value>^[a-zA-Z0-9_%-\.]+@([a-zA-Z0-9_%-]+\.)+([a-zA-Z]{2,4})$</value>
+	</submitter_email>
+	<author_name>
+		<value>([^\s,]+, [^\s,]+)|([^\s,]+)|([^\s,]+(\\s+[^\s,]+){2,})</value>
+	</author_name>
+	<url>
+		<value>^((https|http|ftp)://)?(([0-9]{1,3}\.){3}[0-9]{1,3}|([0-9a-zA-Z_!~*'()-]+\.)*([0-9a-zA-Z][0-9a-zA-Z-]{0,61})?[0-9a-zA-Z]\.[a-zA-Z]{2,6})(:[0-9]{1,4})?((/?)|(/[0-9a-zA-Z_!~*'().;?:@&amp;=+$,%#-]+)+/?)$</value>
+	</url>
+	<pmid>
+		<value>\d+</value>
+	</pmid>
+	<manuscript_doi>
+		<value>10(.\w+)+/(\S+)</value>
+	</manuscript_doi>
+	<mandatory_file>
+		<value>readme.txt</value>
+	</mandatory_file>
+</validation>

@@ -1,0 +1,39 @@
+**Begin: file 1 : GigaDBUploadForm_Aboriginal.xls in process...
+**End error: GigaDBUploadForm_Aboriginal.xls duplicate upload!
+
+**Begin: file 2 : GigaDBUploadForm_AdeliePenguin.xls in process...
+**End error: GigaDBUploadForm_AdeliePenguin.xls duplicate upload!
+
+**Begin: file 3 : GigaDBUploadForm_Antelope.xls in process...
+**End error: GigaDBUploadForm_Antelope.xls duplicate upload!
+
+**Begin: file 4 : GigaDBUploadForm_Cabbage.xls in process...
+**End error: GigaDBUploadForm_Cabbage.xls duplicate upload!
+
+**Begin: file 5 : GigaDBUploadForm_CHO-K1.xls in process...
+**End error: GigaDBUploadForm_CHO-K1.xls duplicate upload!
+
+**Begin: file 6 : GigaDBUploadForm_CrabEatingMacaque.xls in process...
+**End error: GigaDBUploadForm_CrabEatingMacaque.xls duplicate upload!
+
+**Begin: file 7 : GigaDBUploadForm_Cucumber.xls in process...
+**End error: GigaDBUploadForm_Cucumber.xls duplicate upload!
+
+**Begin: file 8 : GigaDBUploadForm_Ecoli.xls in process...
+Getting genbank common name warning: can't get it!
+ValidTest for common_name: 'E. coli'. Warning for tax_id: 562 , the right one should be in: [enterobacteria]
+**End success: GigaDBUploadForm_Ecoli.xls
+**Begin: file 9 : GigaDBUploadForm_EmperorPenguin.xls in process...
+**End error: GigaDBUploadForm_EmperorPenguin.xls duplicate upload!
+
+**Begin: file 10 : GigaDBUploadForm_FloridaCarpenterAnt.xls in process...
+**End error: GigaDBUploadForm_FloridaCarpenterAnt.xls duplicate upload!
+
+**Begin: file 11 : GigaDBUploadForm_JerdonsJumpingAnt.xls in process...
+**End error: GigaDBUploadForm_JerdonsJumpingAnt.xls duplicate upload!
+
+**Begin: file 12 : GigaDBUploadForm_LeafCutterAnt.xls in process...
+**************************
+begin;
+java.lang.NullPointerException
+**************************

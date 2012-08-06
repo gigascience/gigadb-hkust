@@ -1,0 +1,474 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta name="keywords" content="" />
+ <meta name="description" content="" />
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <title>why not?</title> 
+<style type="text/css"> 
+  <!-- 
+ body{background:#fff} 
+ .Menu { 
+  position:relative; 
+  width:100%; 
+  height:220px; 
+  z-index:1; 
+  background: #FFF; 
+  border:1px solid #000; 
+  margin-top:-100px; 
+  display:none;
+
+ } 
+ .Menu2 { 
+  position: absolute; 
+  left:0; 
+  top:0; 
+  width:100%; 
+  height:200px; 
+  overflow-y:scroll;
+  z-index:1; 
+ } 
+ .Menu2 ul{margin:0;padding:0} 
+ .Menu2 ul li{width:100%;height:25px;line-height:25px;text-indent:15px; 
+              border-bottom:1px dashed #ccc;color:#666;cursor:pointer; 
+     change:expression( 
+      this.onmouseover=function(){ 
+        this.style.background="#F2F5EF"; 
+      }, 
+      this.onmouseout=function(){ 
+        this.style.background=""; 
+      } 
+     ) 
+    } 
+input{width:auto} 
+ .form{width:auto;height:auto;} 
+ .form div{position:relative;top:0;left:0;margin-bottom:5px} 
+ #List0,#List1,#List2,#List3,#List4,#List5,#List6,#List7,#List8,#List9{left:0px;top:93px;} 
+ --> 
+  </style> 
+  </head> <body>
+<script type="text/javascript">
+function formReset()
+  {
+  document.getElementById("myForm").reset()
+  }
+ 
+var rowNum = 1; 
+//添加一行 
+function AddRow() { 
+var myTable = document.getElementById("myTable"); 
+var newTr = myTable.insertRow(rowNum); 
+var newTd1 = newTr.insertCell(0); 
+newTd1.setAttribute("style", "vertical-align: top;"); 
+
+newTd1.innerHTML = '<select name="bool'+rowNum+'"><option value=" intersect ">AND</option><option value=" union ">OR</option><option value=" except ">NOT</option></select> '; 
+var newTd2 = newTr.insertCell(1); 
+newTd2.setAttribute("style", "vertical-align: top;"); 
+newTd2.innerHTML = '<select name="item'+rowNum+'" id="mySelect'+rowNum+'"  onchange="addLi('+rowNum+');showAndHide(\'List'+rowNum+'\',\'hide\');"><option value =1>All Fields</option><option value =6>Accession</option><option value =2>Author (last name, initials)</option><option value =3>Dataset_type</option><option value =16>Dataset_DOI</option><option value =5>Description</option><option value =8>External_link</option><option value =30>External_link_type</option><option value =9>File_description</option><option value =10>File_extension</option><option value =11>File_name</option><option value =12>File_size < </option><option value =38>File_size> </option><option value =13>File_format</option><option value =14>File_type</option><option value=4> Genbank_name</option><option value =17>Manuscript_DOI</option><option value =18>Modification_date before (YYYY/MM/DD)</option><option value =35>Modification_date after (YYYY/MM/DD)</option><option value =20>PMID </option><option value =21>Project_name</option><option value =22>Publication_date  before (YYYY/MM/DD)</option><option value =36>Publication_date  after (YYYY/MM/DD)</option><option value =23>Publisher</option><option value =25>Sample_id</option><option value=7>Scientific_name</option><option value =26>Submitter_affiliation</option><option value =27>Submitter_handle</option><option value =28>Tax_id</option><option value =29>Title</option></select>'; 
+var newTd3 = newTr.insertCell(2); 
+newTd3.setAttribute("align", "left"); 
+
+newTd3.innerHTML = ' <div><input type="text" name="cont'+rowNum+'"  id="txt'+rowNum+'"  onClick="showAndHide(\'List'+rowNum+'\',\'show\');" > </div>     <div class="Menu" id="List'+rowNum+'">      <div class="Menu2">        <ul id="ol'+rowNum+'">	   </ul>         </div>  </div>'; 
+var newTd4 = newTr.insertCell(3); 
+newTd4.setAttribute("style", "vertical-align: top;"); 
+newTd4.innerHTML = ' <input type="button" value="REMOVE" onclick="DeleteRow('+rowNum+')" />'; 
+
+rowNum++; 
+}  
+function DeleteRow(num) { 
+var myTable = document.getElementById("myTable"); 
+
+myTable.deleteRow(num); 
+ 
+}
+ function showAndHide(obj,types){ 
+	 if (types=="show")
+	 {var x = document.getElementById("mySelect"+ obj.substring(4));
+    var ix=x.selectedIndex;
+	if(ix==3||ix==4||ix== 7 ||ix== 9 ||ix==13||ix== 14||ix== 15 ||ix==20 ||ix==23 ||ix==26 ||ix==25)
+     var Layer=window.document.getElementById(obj); 
+   
+      Layer.style.display="block"; 
+	 }else{
+	
+     var Layer=window.document.getElementById(obj); 
+    
+      Layer.style.display="none"; 
+	
+	 }
+   } 
+   function getValue(obj,str){ 
+     var input=window.document.getElementById(obj); 
+  input.value=str; 
+   } 
+  
+
+ function addLi(n){
+	
+var x = document.getElementById("mySelect"+n);
+
+var ix=x.selectedIndex;
+var aEg = new Array([],[],[],["Epigenomic"
+,"Genomic"
+,"Transcriptomic"
+],["10.5524/100001"
+,"10.5524/100002"
+,"10.5524/100003"
+,"10.5524/100004"
+,"10.5524/100005"
+,"10.5524/100006"
+,"10.5524/100007"
+,"10.5524/100008"
+,"10.5524/100009"
+,"10.5524/100010"
+,"10.5524/100011"
+,"10.5524/100012"
+,"10.5524/100013"
+,"10.5524/100014"
+,"10.5524/100015"
+,"10.5524/100016"
+,"10.5524/100017"
+,"10.5524/100018"
+,"10.5524/100019"
+,"10.5524/100020"
+,"10.5524/100021"
+,"10.5524/100022"
+,"10.5524/100023"
+,"10.5524/100024"
+,"10.5524/100025"
+,"10.5524/100026"
+,"10.5524/100027"
+,"10.5524/100028"
+,"10.5524/100032"
+],[],[],["additional_information"
+,"genome_browser"],[],[
+	"agp"
+,"annotation"
+,"cdepth"
+,"cds"
+,"cfg"
+,"chain"
+,"chr"
+,"chrM"
+,"chrX"
+,"chrY"
+,"confirmed1_blast_ge100"
+,"contig"
+,"data"
+,"depth"
+,"doc"
+,"fa"
+,"fasta"
+,"fastq"
+,"fq"
+,"geno_soap3"
+,"gff"
+,"haplotype"
+,"ID"
+,"ipr"
+,"iprscan"
+,"kegg"
+,"length"
+,"list"
+,"maf"
+,"name"
+,"net"
+,"pdf"
+,"pep"
+,"png"
+,"PP"
+,"qmap"
+,"qual","rpkm"
+,"scaffold"
+,"scafSeq"
+,"scafSeq_FG"
+,"seq"
+,"snp"
+,"stat"
+,"tab"
+,"tar"
+,"txt"
+,"unknown"
+,"updata"
+,"vcf"
+,"wego"
+,"wig"
+,"xls"
+],[],[],[],["AGP"
+,"CHAIN"
+,"CONTIG"
+,"EXCEL"
+,"FASTA"
+,"FASTQ"
+,"GFF"
+,"IPR"
+,"KEGG"
+,"MAF"
+,"NET"
+,"PDF"
+,"PNG"
+,"TAR"
+,"TEXT"
+,"unknown"
+,"WEGO"
+],["Alignments"
+,"Annotation"
+,"Coding sequence"
+,"Genome assembly"
+,"Genome sequence"
+,"Genotyping data"
+,"InDels"
+,"Methylome data"
+,"Other"
+,"Protein sequence"
+,"Readme"
+,"SNPs"
+,"SVs"
+,"Transcriptome data"
+,"Transcriptome sequence"
+],["Adelie penguin"
+,"Chinese hamster"
+,"chiru"
+,"crab-eating macaque"
+,"emperor penguin"
+,"Florida carpenter ant"
+,"foxtail millet"
+,"giant panda"
+,"human"
+,"Jerdon's jumping ant"
+,"naked mole-rat"
+,"Panamanian leafcutter ant"
+,"pig"
+,"pigeon pea"
+,"pig roundworm"
+,"polar bear"
+,"potato"
+,"Rhesus monkey"
+,"Rock pigeon"
+,"sheep"
+,"sorghum "
+],[],[],[],[],["1000 Genomes"
+,"Genome 10K"
+,"International Sheep Genetics Consortium"
+,"Temasek LifeSciences Laboratory"
+,"The Institute of Botany, The Chinese Academy of Sciences"
+,"The Potato Genome"],[],[],["BGI Shenzhen"
+,"GigaScience"],[],["Acromyrmex echinatior"
+,"Ailuropoda melanoleuca"
+,"Aptenodytes forsteri"
+,"Ascaris suum"
+,"Bombyx"
+,"Brassica rapa subsp. pekinensis"
+,"Cajanus cajan"
+,"Camponotus floridanus"
+,"Columba livia"
+,"Cricetulus griseus"
+,"Cucumis sativus var. sativus"
+,"Escherichia coli"
+,"Harpegnathos saltator"
+,"Heterocephalus glaber"
+,"Homo sapiens"
+,"Macaca fascicularis"
+,"Macaca mulatta"
+,"Ovis aries"
+,"Pantholops hodgsonii"
+,"Pygoscelis adeliae"
+,"Schistosoma haematobium"
+,"Setaria italica"
+,"Solanum tuberosum"
+,"Sorghum bicolor"
+,"Sus scrofa"
+,"Ursus maritimus"
+],["BGI"
+,"CAAS"
+,"CSIRO Livestock Industries"],[],[],[]
+);
+
+//var target = document.getElementById("Menu2");
+var ol = document.getElementById("ol"+n);
+//var   obj   =   document.getElementById( "ol1").childNodes; 
+//for(var   i=0;   i <obj.length-1;i++) obj[i].removeNode(true); 
+
+	var children = ol.childNodes;
+	for( i=ol.childNodes.length-1;i>=0;i--){
+		ol.removeChild(children[0]);}
+	//var children = ol.childNodes;
+	//ol.removeChild(children[0]);
+	var ol = document.getElementById("ol"+n);
+	
+		for (j=0;j< aEg[ix].length;j++ )
+		{var myLi = document.createElement("li");
+   myLi.onmousedown=new Function("getValue('txt"+n+"','"+aEg[ix][j]+"');showAndHide('List"+n+"','hide')");
+  myLi.innerHTML=aEg[ix][j]
+  ol.appendChild(myLi);
+		}
+
+//var children = ol.childNodes;
+//	ol.removeChild(children[0]);
+}
+</script>
+
+
+<h2>Submit System</h2>
+<form action="upload_file.php" method="post"
+enctype="multipart/form-data">
+<label for="file">Filename:</label>
+<input type="file" name="file" id="file" /> 
+<br />
+<input type="submit" name="submit" value="Submit" />
+</form>
+------------------------------------------------------------------------------
+<h2>Reserved Dataset</h2>
+<script language=JavaScript>
+
+
+function InputCheck(LoginForm)
+{
+		var reg = new RegExp("^10[\.]5524/([0-9]{6})$");
+   if(!reg.test(LoginForm.username.value))
+	{
+ 
+    alert("Wrong DOI");
+    LoginForm.username.focus();
+    return (false);
+  }
+  return (true);
+}
+
+
+</script>
+<form action="re.php" method="get" onSubmit="return InputCheck(this)">
+Reserved DOI:
+<input  id="username" type="text" name="re"  /> <br / >
+Notes:
+<input type="text" name="note"/><br />
+<input type="submit"  value="Submit" />
+</form>
+------------------------------------------------------------------------------
+<h2>Input-box for search</h2>
+<form action="search1.php" method="get">
+<div class="form"> 
+<table id="myTable" > 
+<tr> <td style="vertical-align: top;">
+<input type="button" value="Add search" onclick="AddRow()" /></td><td style="vertical-align: top;">
+<select name="item0" id="mySelect0" onchange="addLi(0);showAndHide('List0','hide');">
+<option value =1>All Fields</option>
+<option value =6>Accession</option>
+<option value =2>Author (last name, initials)</option>
+<option value =3>Dataset_type</option>
+<option value =16>Dataset_DOI</option>
+<option value =5>Description</option>
+<option value =8>External_link</option>
+<option value =30>External_link_type</option>
+<option value =9>File_description</option>
+<option value =10>File_extension</option>
+<option value =11>File_name</option>
+<option value =12>File_size < </option>
+<option value =38>File_size > </option>
+<option value =13>File_format </option>
+<option value =14>File_type</option>
+<option value=4> Genbank_name</option>
+<option value =17>Manuscript_DOI</option>
+<option value =18>Modification_date before (YYYY/MM/DD)</option>
+<option value =35>Modification_date after (YYYY/MM/DD)</option>
+<option value =20>PMID </option>
+<option value =21>Project_name</option>
+<option value =22>Publication_date  before (YYYY/MM/DD)</option>
+<option value =36>Publication_date  after (YYYY/MM/DD)</option>
+<option value =23>Publisher</option>
+<option value =25>Sample_id</option>
+<option value=7>Scientific_name</option>
+<option value =26>Submitter_affiliation</option>
+<option value =27>Submitter_handle</option>
+<option value =28>Tax_id</option>
+<option value =29>Title</option>
+
+
+</select>
+</td><td >
+
+
+   <div><input type="text" name="cont0"  id="txt0" onClick="showAndHide('List0','show');"  > </div> 
+     <!--列表1--> 
+     <div class="Menu" id="List0" > 
+     <div class="Menu2" > 
+       <ul id="ol0" >
+	   </ul>
+     </div> 
+     </div> 
+	
+</td> 
+<td>
+
+</td>
+
+  </tr></table>
+</div>
+ <input type="submit" value="Search" />
+
+</form>
+
+
+------------------------------------------------------------------------------
+<h2>Check-box for search</h2>
+<table cellpadding="10" ><tr><td style="vertical-align: top;">
+<table border="1" >
+<tr>
+<th>Include</th>
+<th>Exclude</th>
+
+<th>Item</th>
+</tr>
+<tr>
+<form id="myForm" action="search3.php" method="get">
+<th colspan="3">Organism</th>
+</tr>
+
+
+<input type="hidden" value="1344240307" name="time"><tr><td><input type="radio" name="9238" value= "1" /></td><td><input type="radio" name="9238" value="2" /></td><td>Adelie penguin</td></tr><tr><td><input type="radio" name="51351" value= "1" /></td><td><input type="radio" name="51351" value="2" /></td><td>Chinese cabbage</td></tr><tr><td><input type="radio" name="10029" value= "1" /></td><td><input type="radio" name="10029" value="2" /></td><td>Chinese hamster</td></tr><tr><td><input type="radio" name="9541" value= "1" /></td><td><input type="radio" name="9541" value="2" /></td><td>Crab-eating macaque</td></tr><tr><td><input type="radio" name="869827" value= "1" /></td><td><input type="radio" name="869827" value="2" /></td><td>Cucumber</td></tr><tr><td><input type="radio" name="8932" value= "1" /></td><td><input type="radio" name="8932" value="2" /></td><td>Domestic pigeon</td></tr><tr><td><input type="radio" name="562" value= "1" /></td><td><input type="radio" name="562" value="2" /></td><td>E. coli</td></tr><tr><td><input type="radio" name="9233" value= "1" /></td><td><input type="radio" name="9233" value="2" /></td><td>Emperor penguin</td></tr><tr><td><input type="radio" name="6185" value= "1" /></td><td><input type="radio" name="6185" value="2" /></td><td>Flatworm</td></tr><tr><td><input type="radio" name="104421" value= "1" /></td><td><input type="radio" name="104421" value="2" /></td><td>Florida carpenter ant</td></tr><tr><td><input type="radio" name="4555" value= "1" /></td><td><input type="radio" name="4555" value="2" /></td><td>Foxtail millet</td></tr><tr><td><input type="radio" name="9646" value= "1" /></td><td><input type="radio" name="9646" value="2" /></td><td>Giant panda</td></tr><tr><td><input type="radio" name="9606" value= "1" /></td><td><input type="radio" name="9606" value="2" /></td><td>Human</td></tr><tr><td><input type="radio" name="610380" value= "1" /></td><td><input type="radio" name="610380" value="2" /></td><td>Jerdon's jumping ant</td></tr><tr><td><input type="radio" name="103372" value= "1" /></td><td><input type="radio" name="103372" value="2" /></td><td>Leafcutter ant</td></tr><tr><td><input type="radio" name="10181" value= "1" /></td><td><input type="radio" name="10181" value="2" /></td><td>Naked mole rat</td></tr><tr><td><input type="radio" name="9823" value= "1" /></td><td><input type="radio" name="9823" value="2" /></td><td>Pig</td></tr><tr><td><input type="radio" name="3821" value= "1" /></td><td><input type="radio" name="3821" value="2" /></td><td>Pigeonpea</td></tr><tr><td><input type="radio" name="6253" value= "1" /></td><td><input type="radio" name="6253" value="2" /></td><td>Pig roundworm</td></tr><tr><td><input type="radio" name="29073" value= "1" /></td><td><input type="radio" name="29073" value="2" /></td><td>Polar bear</td></tr><tr><td><input type="radio" name="4113" value= "1" /></td><td><input type="radio" name="4113" value="2" /></td><td>Potato</td></tr><tr><td><input type="radio" name="9544" value= "1" /></td><td><input type="radio" name="9544" value="2" /></td><td>Rhesus macaque</td></tr><tr><td><input type="radio" name="9940" value= "1" /></td><td><input type="radio" name="9940" value="2" /></td><td>Sheep</td></tr><tr><td><input type="radio" name="7090" value= "1" /></td><td><input type="radio" name="7090" value="2" /></td><td>Silkworm</td></tr><tr><td><input type="radio" name="4558" value= "1" /></td><td><input type="radio" name="4558" value="2" /></td><td>Sorghum bicolor</td></tr><tr><td><input type="radio" name="59538" value= "1" /></td><td><input type="radio" name="59538" value="2" /></td><td>Tibetan antelope</td></tr>
+
+
+
+
+
+<tr>
+<th colspan="3">Dataset Type </th></tr>
+<tr><td><input type="radio" name="Transcriptomic" value= "1" /></td><td><input type="radio" name="Transcriptomic" value="2" /></td><td>Transcriptomic</td></tr><tr><td><input type="radio" name="Epigenomic" value= "1" /></td><td><input type="radio" name="Epigenomic" value="2" /></td><td>Epigenomic</td></tr><tr><td><input type="radio" name="Genomic" value= "1" /></td><td><input type="radio" name="Genomic" value="2" /></td><td>Genomic</td></tr>
+
+
+<tr>
+
+<th colspan="3">Publisher</th>
+</tr>
+<tr><td><input type="radio" name="BGI" value="1" /></td><td><input type="radio" name="BGI" value="2" /></td><td>BGI Shenzhen</td></tr>
+<tr><td><input type="radio" name="GigaScience" value="1" /></td><td><input type="radio" name="GigaScience" value="2" /></td><td>GigaScience</td></tr>
+
+
+
+<tr>
+<th colspan="3">Project Name</th>
+</tr>
+<tr><td><input type="radio" name="Genome10K" value= "1" /></td><td><input type="radio" name="Genome10K" value="2" /></td><td>Genome 10K</td></tr><tr><td><input type="radio" name="InternationalSheepGeneticsConsortium" value= "1" /></td><td><input type="radio" name="InternationalSheepGeneticsConsortium" value="2" /></td><td>International Sheep Genetics Consortium</td></tr><tr><td><input type="radio" name="1000Genomes" value= "1" /></td><td><input type="radio" name="1000Genomes" value="2" /></td><td>1000 Genomes</td></tr><tr><td><input type="radio" name="ThePotatoGenomeSequencingConsortium" value= "1" /></td><td><input type="radio" name="ThePotatoGenomeSequencingConsortium" value="2" /></td><td>The Potato Genome Sequencing Consortium</td></tr><tr><td><input type="radio" name="TheInstituteofBotany,TheChineseAcademyofSciences" value= "1" /></td><td><input type="radio" name="TheInstituteofBotany,TheChineseAcademyofSciences" value="2" /></td><td>The Institute of Botany, The Chinese Academy of Sciences</td></tr><tr><td><input type="radio" name="TemasekLifeSciencesLaboratory" value= "1" /></td><td><input type="radio" name="TemasekLifeSciencesLaboratory" value="2" /></td><td>Temasek LifeSciences Laboratory</td></tr><tr>
+</table></td>
+<td style="vertical-align: top;">
+<table border="1">
+<tr>
+<th>Include</th>
+<th>Exclude</th>
+
+<th>Item</th>
+</tr><tr>
+
+<th colspan="3">File Type</th>
+</tr>
+<tr><td><input type="radio" name="Alignments" value= "1" /></td><td><input type="radio" name="Alignments" value="2" /></td><td>Alignments</td></tr><tr><td><input type="radio" name="Annotation" value= "1" /></td><td><input type="radio" name="Annotation" value="2" /></td><td>Annotation</td></tr><tr><td><input type="radio" name="Codingsequence" value= "1" /></td><td><input type="radio" name="Codingsequence" value="2" /></td><td>Coding sequence</td></tr><tr><td><input type="radio" name="Genomeassembly" value= "1" /></td><td><input type="radio" name="Genomeassembly" value="2" /></td><td>Genome assembly</td></tr><tr><td><input type="radio" name="Genomesequence" value= "1" /></td><td><input type="radio" name="Genomesequence" value="2" /></td><td>Genome sequence</td></tr><tr><td><input type="radio" name="Genotypingdata" value= "1" /></td><td><input type="radio" name="Genotypingdata" value="2" /></td><td>Genotyping data</td></tr><tr><td><input type="radio" name="InDels" value= "1" /></td><td><input type="radio" name="InDels" value="2" /></td><td>InDels</td></tr><tr><td><input type="radio" name="Methylomedata" value= "1" /></td><td><input type="radio" name="Methylomedata" value="2" /></td><td>Methylome data</td></tr><tr><td><input type="radio" name="Other" value= "1" /></td><td><input type="radio" name="Other" value="2" /></td><td>Other</td></tr><tr><td><input type="radio" name="Proteinsequence" value= "1" /></td><td><input type="radio" name="Proteinsequence" value="2" /></td><td>Protein sequence</td></tr><tr><td><input type="radio" name="Readme" value= "1" /></td><td><input type="radio" name="Readme" value="2" /></td><td>Readme</td></tr><tr><td><input type="radio" name="SNPs" value= "1" /></td><td><input type="radio" name="SNPs" value="2" /></td><td>SNPs</td></tr><tr><td><input type="radio" name="SVs" value= "1" /></td><td><input type="radio" name="SVs" value="2" /></td><td>SVs</td></tr><tr><td><input type="radio" name="Transcriptomedata" value= "1" /></td><td><input type="radio" name="Transcriptomedata" value="2" /></td><td>Transcriptome data</td></tr><tr>
+<th colspan="3">File Format</th>
+</tr>
+<tr><td><input type="radio" name="AGP" value= "1" /></td><td><input type="radio" name="AGP" value="2" /></td><td>AGP</td></tr><tr><td><input type="radio" name="CHAIN" value= "1" /></td><td><input type="radio" name="CHAIN" value="2" /></td><td>CHAIN</td></tr><tr><td><input type="radio" name="CONTIG" value= "1" /></td><td><input type="radio" name="CONTIG" value="2" /></td><td>CONTIG</td></tr><tr><td><input type="radio" name="EXCEL" value= "1" /></td><td><input type="radio" name="EXCEL" value="2" /></td><td>EXCEL</td></tr><tr><td><input type="radio" name="FASTA" value= "1" /></td><td><input type="radio" name="FASTA" value="2" /></td><td>FASTA</td></tr><tr><td><input type="radio" name="FASTQ" value= "1" /></td><td><input type="radio" name="FASTQ" value="2" /></td><td>FASTQ</td></tr><tr><td><input type="radio" name="GFF" value= "1" /></td><td><input type="radio" name="GFF" value="2" /></td><td>GFF</td></tr><tr><td><input type="radio" name="IPR" value= "1" /></td><td><input type="radio" name="IPR" value="2" /></td><td>IPR</td></tr><tr><td><input type="radio" name="KEGG" value= "1" /></td><td><input type="radio" name="KEGG" value="2" /></td><td>KEGG</td></tr><tr><td><input type="radio" name="MAF" value= "1" /></td><td><input type="radio" name="MAF" value="2" /></td><td>MAF</td></tr><tr><td><input type="radio" name="NET" value= "1" /></td><td><input type="radio" name="NET" value="2" /></td><td>NET</td></tr><tr><td><input type="radio" name="PDF" value= "1" /></td><td><input type="radio" name="PDF" value="2" /></td><td>PDF</td></tr><tr><td><input type="radio" name="PNG" value= "1" /></td><td><input type="radio" name="PNG" value="2" /></td><td>PNG</td></tr><tr><td><input type="radio" name="QMAP" value= "1" /></td><td><input type="radio" name="QMAP" value="2" /></td><td>QMAP</td></tr><tr><td><input type="radio" name="QUAL" value= "1" /></td><td><input type="radio" name="QUAL" value="2" /></td><td>QUAL</td></tr><tr><td><input type="radio" name="RPKM" value= "1" /></td><td><input type="radio" name="RPKM" value="2" /></td><td>RPKM</td></tr><tr><td><input type="radio" name="TAR" value= "1" /></td><td><input type="radio" name="TAR" value="2" /></td><td>TAR</td></tr><tr><td><input type="radio" name="TEXT" value= "1" /></td><td><input type="radio" name="TEXT" value="2" /></td><td>TEXT</td></tr><tr><td><input type="radio" name="UNKNOWN" value= "1" /></td><td><input type="radio" name="UNKNOWN" value="2" /></td><td>UNKNOWN</td></tr><tr><td><input type="radio" name="VCF" value= "1" /></td><td><input type="radio" name="VCF" value="2" /></td><td>VCF</td></tr><tr><td><input type="radio" name="WEGO" value= "1" /></td><td><input type="radio" name="WEGO" value="2" /></td><td>WEGO</td></tr><tr><td><input type="radio" name="WIG" value= "1" /></td><td><input type="radio" name="WIG" value="2" /></td><td>WIG</td></tr>
+
+</table>
+</td></tr></table>
+<input type="button" onclick="formReset()" value="Reset"> 
+<input type="submit" value="Search" />
+</form>
+</body>
+</html>

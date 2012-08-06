@@ -1,0 +1,16 @@
+Table Design Log
+1. change the type of image_license to character(250)
+2. change the type of image_source to character(200)
+3. change release_date in entity dataset to optional attribute
+2. change project_name in project and dataset_project to character(70)
+3. change project_image_tag to character(70)
+4. change file_size from integer to bigint, which is 8 bytes large, and in Java its corresponding data type is long 
+
+SQL statement
+1. optimize the insert statement. To determine if a record exists in the GigaDB, I used its all attributes as metric before and now 
+	only the primary attributes are metric. 
+2. SQL Update statements can be generated based on excel file. Thus	the dataset which is already in the GigaDB can be updated.
+	
+Validation Checks
+1. internal field validation is under test and subject to change.
+2. external field validation is under test and subject to change. 
